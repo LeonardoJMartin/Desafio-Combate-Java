@@ -36,12 +36,8 @@ public class Champion {
 		return armor;
 	}
 	
-	public void champion(String name, int life, int damage, int armor) {
-		
-	}
-	
 	public void takeDamage(Champion other) {
-		int difference  = armor - other.attack;
+		int difference  = other.attack - armor;
 		if(difference < 1) {
 			difference = 1;
 		}
